@@ -1,0 +1,50 @@
+{
+ "structures": [
+  {
+   "structure": "militarymod:underground_bunker",
+   "weight": 1
+  },
+  {
+   "structure": "militarymod:command_center",
+   "weight": 1
+  },
+  {
+   "structure": "militarymod:supply_depot",
+   "weight": 1
+  },
+  {
+   "structure": "militarymod:prison_camp",
+   "weight": 1
+  },
+  {
+   "structure": "militarymod:laboratory",
+   "weight": 1
+  },
+  {
+   "structure": "militarymod:armory_vault",
+   "weight": 1
+  },
+  {
+   "structure": "militarymod:missile_silo",
+   "weight": 1
+  },
+  {
+   "structure": "militarymod:tunnel_complex",
+   "weight": 1
+  },
+  {
+   "structure": "militarymod:hq_barracks",
+   "weight": 1
+  },
+  {
+   "structure": "militarymod:black_site",
+   "weight": 1
+  }
+ ],
+ "placement": {
+  "type": "minecraft:random_spread",
+  "spacing": 22,
+  "separation": 9,
+  "salt": 91827366
+ }
+}

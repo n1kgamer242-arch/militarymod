@@ -1,0 +1,50 @@
+{
+ "structures": [
+  {
+   "structure": "militarymod:watchtower",
+   "weight": 1
+  },
+  {
+   "structure": "militarymod:sandbag_nest",
+   "weight": 1
+  },
+  {
+   "structure": "militarymod:checkpoint",
+   "weight": 1
+  },
+  {
+   "structure": "militarymod:concrete_bunker",
+   "weight": 1
+  },
+  {
+   "structure": "militarymod:sniper_nest",
+   "weight": 1
+  },
+  {
+   "structure": "militarymod:field_camp",
+   "weight": 1
+  },
+  {
+   "structure": "militarymod:barracks",
+   "weight": 1
+  },
+  {
+   "structure": "militarymod:trench_line",
+   "weight": 1
+  },
+  {
+   "structure": "militarymod:radio_outpost",
+   "weight": 1
+  },
+  {
+   "structure": "militarymod:armory",
+   "weight": 1
+  }
+ ],
+ "placement": {
+  "type": "minecraft:random_spread",
+  "spacing": 20,
+  "separation": 8,
+  "salt": 91827365
+ }
+}
