@@ -1,0 +1,18 @@
+{
+ "itemGroup.militarymod": "Military Mod",
+ "item.militarymod.rifle": "Assault Rifle",
+ "item.militarymod.ammo": "Ammo",
+ "item.militarymod.command_radio": "Command Radio",
+ "item.militarymod.ally_soldier_spawn_egg": "Allied Soldier Spawn Egg",
+ "item.militarymod.hostile_soldier_spawn_egg": "Hostile Soldier Spawn Egg",
+ "entity.militarymod.ally_soldier": "Allied Soldier",
+ "entity.militarymod.hostile_soldier": "Hostile Soldier",
+ "entity.militarymod.bullet": "Bullet",
+ "msg.militarymod.wave": "WAVE %s! Enemy soldiers are closing in!",
+ "msg.militarymod.recruited": "Soldier recruited!",
+ "msg.militarymod.need_emeralds": "Recruiting costs %s emeralds.",
+ "msg.militarymod.mode_follow": "Soldier: FOLLOW",
+ "msg.militarymod.mode_guard": "Soldier: GUARD",
+ "msg.militarymod.radio_rally": "%s soldiers moving to position",
+ "msg.militarymod.radio_follow": "%s soldiers following you"
+}

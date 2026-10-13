@@ -1,0 +1,18 @@
+{
+ "itemGroup.militarymod": "Military Mod",
+ "item.militarymod.rifle": "Fucile d'assalto",
+ "item.militarymod.ammo": "Munizioni",
+ "item.militarymod.command_radio": "Radio di comando",
+ "item.militarymod.ally_soldier_spawn_egg": "Uovo di spawn Soldato alleato",
+ "item.militarymod.hostile_soldier_spawn_egg": "Uovo di spawn Soldato nemico",
+ "entity.militarymod.ally_soldier": "Soldato alleato",
+ "entity.militarymod.hostile_soldier": "Soldato nemico",
+ "entity.militarymod.bullet": "Proiettile",
+ "msg.militarymod.wave": "ONDATA %s! I soldati nemici stanno arrivando!",
+ "msg.militarymod.recruited": "Soldato reclutato!",
+ "msg.militarymod.need_emeralds": "Reclutare costa %s smeraldi.",
+ "msg.militarymod.mode_follow": "Soldato: SEGUI",
+ "msg.militarymod.mode_guard": "Soldato: GUARDIA",
+ "msg.militarymod.radio_rally": "%s soldati in movimento verso la posizione",
+ "msg.militarymod.radio_follow": "%s soldati ti seguono"
+}
