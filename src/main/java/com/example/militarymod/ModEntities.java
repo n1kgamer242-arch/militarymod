@@ -23,5 +23,5 @@ public class ModEntities {
 
     public static final RegistryObject<EntityType<BulletEntity>> BULLET = ENTITIES.register("bullet",
             () -> EntityType.Builder.<BulletEntity>of(BulletEntity::new, MobCategory.MISC)
-                    .sized(0.25F, 0.25F).clientTrackingRange(4).updateInterval(5).build("bullet"));
+                    .sized(0.25F, 0.25F).clientTrackingRange(4).updateInterval(20).build("bullet"));
 }

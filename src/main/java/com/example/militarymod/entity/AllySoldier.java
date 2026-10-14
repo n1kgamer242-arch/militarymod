@@ -1,5 +1,7 @@
 package com.example.militarymod.entity;
 
+import com.example.militarymod.compat.ModCompat;
+import com.example.militarymod.compat.TaczCompat;
 import com.example.militarymod.item.ModItems;
 import net.minecraft.core.BlockPos;
 import net.minecraft.nbt.CompoundTag;
@@ -44,6 +46,8 @@ public class AllySoldier extends PathfinderMob implements RangedAttackMob {
 
     @Nullable private UUID owner;
     private int mode = MODE_GUARD;
+    private boolean gunReady = false;
+    private int lastShot = -100;
     @Nullable private BlockPos rally;
 
     public AllySoldier(EntityType<? extends AllySoldier> type, Level level) {
@@ -70,7 +74,7 @@ public class AllySoldier extends PathfinderMob implements RangedAttackMob {
     @Override
     protected void registerGoals() {
         goalSelector.addGoal(0, new FloatGoal(this));
-        goalSelector.addGoal(1, new RangedAttackGoal(this, 1.0D, 16, 28.0F));
+        goalSelector.addGoal(1, new SoldierAttackGoal<>(this, 1.0D, 26.0F));
         goalSelector.addGoal(2, new FollowOwnerGoal(this));
         goalSelector.addGoal(3, new GoToRallyGoal(this));
         goalSelector.addGoal(6, new LookAtPlayerGoal(this, Player.class, 10.0F));
@@ -84,7 +88,21 @@ public class AllySoldier extends PathfinderMob implements RangedAttackMob {
 
     @Override
     public void performRangedAttack(LivingEntity target, float power) {
-        Gun.fire(this, target, 1.6D, 4.0F);
+        if (ModCompat.tacz() && TaczCompat.isGun(getMainHandItem())) {
+            TaczCompat.shoot(this, target);
+        } else if (tickCount - lastShot >= 16) {
+            lastShot = tickCount;
+            Gun.fire(this, target, 1.6D, 4.0F);
+        }
+    }
+
+    @Override
+    public void aiStep() {
+        super.aiStep();
+        if (!level().isClientSide && !gunReady && tickCount >= 2) {
+            gunReady = true;
+            if (ModCompat.tacz()) TaczCompat.equip(this, true);
+        }
     }
 
     @Override
