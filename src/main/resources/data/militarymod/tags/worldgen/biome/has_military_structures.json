@@ -1,15 +1,133 @@
 {
+ "replace": false,
  "values": [
-  "#minecraft:is_forest",
-  "#minecraft:is_taiga",
-  "#minecraft:is_hill",
-  "#minecraft:is_savanna",
-  "#minecraft:is_badlands",
-  "#minecraft:is_jungle",
-  "minecraft:plains",
-  "minecraft:sunflower_plains",
-  "minecraft:desert",
-  "minecraft:snowy_plains",
-  "minecraft:meadow"
+  {
+   "id": "#minecraft:is_forest",
+   "required": false
+  },
+  {
+   "id": "#minecraft:is_taiga",
+   "required": false
+  },
+  {
+   "id": "#minecraft:is_hill",
+   "required": false
+  },
+  {
+   "id": "#minecraft:is_mountain",
+   "required": false
+  },
+  {
+   "id": "#minecraft:is_savanna",
+   "required": false
+  },
+  {
+   "id": "#minecraft:is_badlands",
+   "required": false
+  },
+  {
+   "id": "#minecraft:is_jungle",
+   "required": false
+  },
+  {
+   "id": "#forge:is_plains",
+   "required": false
+  },
+  {
+   "id": "#forge:is_desert",
+   "required": false
+  },
+  {
+   "id": "#forge:is_forest",
+   "required": false
+  },
+  {
+   "id": "#forge:is_taiga",
+   "required": false
+  },
+  {
+   "id": "#forge:is_hills",
+   "required": false
+  },
+  {
+   "id": "#forge:is_savanna",
+   "required": false
+  },
+  {
+   "id": "#forge:is_jungle",
+   "required": false
+  },
+  {
+   "id": "#forge:is_mesa",
+   "required": false
+  },
+  {
+   "id": "#forge:is_snowy",
+   "required": false
+  },
+  {
+   "id": "#forge:is_dry",
+   "required": false
+  },
+  {
+   "id": "#forge:is_sandy",
+   "required": false
+  },
+  {
+   "id": "#forge:is_coniferous",
+   "required": false
+  },
+  {
+   "id": "#forge:is_dense",
+   "required": false
+  },
+  {
+   "id": "#forge:is_lush",
+   "required": false
+  },
+  {
+   "id": "#biomesoplenty:is_forest",
+   "required": false
+  },
+  {
+   "id": "#biomesoplenty:is_plains",
+   "required": false
+  },
+  {
+   "id": "#biomesoplenty:is_desert",
+   "required": false
+  },
+  {
+   "id": "#biomesoplenty:is_mountain",
+   "required": false
+  },
+  {
+   "id": "minecraft:plains",
+   "required": false
+  },
+  {
+   "id": "minecraft:sunflower_plains",
+   "required": false
+  },
+  {
+   "id": "minecraft:desert",
+   "required": false
+  },
+  {
+   "id": "minecraft:snowy_plains",
+   "required": false
+  },
+  {
+   "id": "minecraft:meadow",
+   "required": false
+  },
+  {
+   "id": "minecraft:old_growth_birch_forest",
+   "required": false
+  },
+  {
+   "id": "minecraft:dark_forest",
+   "required": false
+  }
  ]
 }
