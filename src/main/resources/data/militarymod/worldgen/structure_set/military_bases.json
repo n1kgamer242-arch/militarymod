@@ -3,6 +3,10 @@
   {
    "structure": "militarymod:recruitment_base",
    "weight": 1
+  },
+  {
+   "structure": "militarymod:airbase",
+   "weight": 1
   }
  ],
  "placement": {

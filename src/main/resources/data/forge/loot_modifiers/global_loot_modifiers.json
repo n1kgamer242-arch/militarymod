@@ -2,6 +2,7 @@
  "replace": false,
  "entries": [
   "militarymod:military_chests",
-  "militarymod:military_soldiers"
+  "militarymod:military_soldiers",
+  "militarymod:military_friendly"
  ]
 }

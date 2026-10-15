@@ -32,6 +32,11 @@ public class MilitaryLootModifier extends LootModifier {
         ResourceLocation table = ctx.getQueriedLootTableId();
         RandomSource r = ctx.getRandom();
         boolean chest = table.getPath().startsWith("chests/");
+        if (table.getPath().contains("friendly")) {
+            // strutture dei buoni: quasi niente (solo ogni tanto un caricatore)
+            if (ModCompat.tacz()) TaczCompat.addLootLow(loot, r);
+            return loot;
+        }
         if (ModCompat.tacz()) TaczCompat.addLoot(loot, r, chest);
         if (chest && ModCompat.sbw()) SbwCompat.addLoot(loot, r);
         return loot;

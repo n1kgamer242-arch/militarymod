@@ -104,6 +104,11 @@ public final class TaczCompat {
         }
     }
 
+    /** Loot minimo per le strutture dei buoni: 15% di probabilita' di un po' di munizioni, mai armi. */
+    public static void addLootLow(ObjectArrayList<ItemStack> loot, RandomSource r) {
+        if (r.nextFloat() < 0.15F) loot.add(ammo(pick(HOSTILE, r), 6 + r.nextInt(10)));
+    }
+
     /** Aggiunge armi/munizioni TACZ al loot. */
     public static void addLoot(ObjectArrayList<ItemStack> loot, RandomSource r, boolean chest) {
         Def d = pick(HOSTILE, r);
