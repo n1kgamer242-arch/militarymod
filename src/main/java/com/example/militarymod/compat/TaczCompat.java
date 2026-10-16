@@ -109,6 +109,15 @@ public final class TaczCompat {
         if (r.nextFloat() < 0.15F) loot.add(ammo(pick(HOSTILE, r), 6 + r.nextInt(10)));
     }
 
+    /** Magazzino del campo: piu' ricco delle altre strutture dei buoni ma ben sotto quelle dei cattivi. */
+    public static void addLootMedium(ObjectArrayList<ItemStack> loot, RandomSource r) {
+        if (r.nextFloat() < 0.65F) loot.add(ammo(pick(ALLY, r), 12 + r.nextInt(20)));
+        if (r.nextFloat() < 0.10F) {
+            ItemStack gun = build(pick(ALLY, r));
+            if (!gun.isEmpty()) loot.add(gun);
+        }
+    }
+
     /** Aggiunge armi/munizioni TACZ al loot. */
     public static void addLoot(ObjectArrayList<ItemStack> loot, RandomSource r, boolean chest) {
         Def d = pick(HOSTILE, r);

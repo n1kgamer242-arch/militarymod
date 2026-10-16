@@ -74,7 +74,7 @@ public class AllySoldier extends PathfinderMob implements RangedAttackMob {
     @Override
     protected void registerGoals() {
         goalSelector.addGoal(0, new FloatGoal(this));
-        goalSelector.addGoal(1, new SoldierAttackGoal<>(this, 1.0D, 26.0F));
+        goalSelector.addGoal(1, new SoldierAttackGoal<>(this, 1.0D, 26.0F, () -> mode == MODE_GUARD));
         goalSelector.addGoal(2, new FollowOwnerGoal(this));
         goalSelector.addGoal(3, new GoToRallyGoal(this));
         goalSelector.addGoal(6, new LookAtPlayerGoal(this, Player.class, 10.0F));
