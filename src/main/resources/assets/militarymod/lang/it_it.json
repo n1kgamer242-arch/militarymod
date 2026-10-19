@@ -14,5 +14,9 @@
  "msg.militarymod.mode_follow": "Soldato: SEGUI",
  "msg.militarymod.mode_guard": "Soldato: GUARDIA",
  "msg.militarymod.radio_rally": "%s soldati in movimento verso la posizione",
- "msg.militarymod.radio_follow": "%s soldati ti seguono"
+ "msg.militarymod.radio_follow": "%s soldati ti seguono",
+ "item.militarymod.marble": "Biglia",
+ "item.militarymod.marble_merchant_spawn_egg": "Uovo di spawn Mercante di biglie",
+ "entity.militarymod.marble_merchant": "Mercante di biglie",
+ "msg.militarymod.need_marbles": "Reclutare costa %s biglie."
 }

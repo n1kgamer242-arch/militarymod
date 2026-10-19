@@ -22,12 +22,17 @@ public class ModItems {
             () -> new RifleItem(new Item.Properties().durability(500)));
     public static final RegistryObject<Item> AMMO = ITEMS.register("ammo",
             () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> MARBLE = ITEMS.register("marble",
+            () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> COMMAND_RADIO = ITEMS.register("command_radio",
             () -> new CommandRadioItem(new Item.Properties().stacksTo(1)));
     public static final RegistryObject<Item> ALLY_SPAWN_EGG = ITEMS.register("ally_soldier_spawn_egg",
             () -> new ForgeSpawnEggItem(ModEntities.ALLY_SOLDIER, 0x4B5320, 0x2B2B2B, new Item.Properties()));
     public static final RegistryObject<Item> HOSTILE_SPAWN_EGG = ITEMS.register("hostile_soldier_spawn_egg",
             () -> new ForgeSpawnEggItem(ModEntities.HOSTILE_SOLDIER, 0x32323A, 0xAA2222, new Item.Properties()));
+
+    public static final RegistryObject<Item> MERCHANT_SPAWN_EGG = ITEMS.register("marble_merchant_spawn_egg",
+            () -> new ForgeSpawnEggItem(ModEntities.MARBLE_MERCHANT, 0x7A2FB0, 0xE0C8FF, new Item.Properties()));
 
     public static final RegistryObject<CreativeModeTab> TAB = TABS.register("main",
             () -> CreativeModeTab.builder()
@@ -36,8 +41,10 @@ public class ModItems {
                     .displayItems((params, out) -> {
                         out.accept(RIFLE.get());
                         out.accept(AMMO.get());
+                        out.accept(MARBLE.get());
                         out.accept(COMMAND_RADIO.get());
                         out.accept(ALLY_SPAWN_EGG.get());
                         out.accept(HOSTILE_SPAWN_EGG.get());
+                        out.accept(MERCHANT_SPAWN_EGG.get());
                     }).build());
 }

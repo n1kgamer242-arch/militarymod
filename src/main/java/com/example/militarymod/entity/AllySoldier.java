@@ -36,13 +36,13 @@ import java.util.EnumSet;
 import java.util.UUID;
 
 /**
- * Soldato alleato. Senza padrone: aspetta di essere reclutato (3 smeraldi, tasto destro).
+ * Soldato alleato. Senza padrone: aspetta di essere reclutato (2 biglie, tasto destro).
  * Con padrone: tasto destro a mano vuota = alterna SEGUI / GUARDIA. Si comanda anche con la radio.
  */
 public class AllySoldier extends PathfinderMob implements RangedAttackMob {
     public static final int MODE_FOLLOW = 0;
     public static final int MODE_GUARD = 1;
-    public static final int RECRUIT_COST = 3;
+    public static final int RECRUIT_COST = 2; // biglie
 
     @Nullable private UUID owner;
     private int mode = MODE_GUARD;
@@ -118,13 +118,13 @@ public class AllySoldier extends PathfinderMob implements RangedAttackMob {
         if (owner == null) {
             if (!level().isClientSide) {
                 boolean creative = player.getAbilities().instabuild;
-                if (held.is(Items.EMERALD) && (creative || held.getCount() >= RECRUIT_COST)) {
+                if (held.is(ModItems.MARBLE.get()) && (creative || held.getCount() >= RECRUIT_COST)) {
                     if (!creative) held.shrink(RECRUIT_COST);
                     owner = player.getUUID();
                     mode = MODE_FOLLOW;
                     player.displayClientMessage(Component.translatable("msg.militarymod.recruited"), true);
                 } else {
-                    player.displayClientMessage(Component.translatable("msg.militarymod.need_emeralds", RECRUIT_COST), true);
+                    player.displayClientMessage(Component.translatable("msg.militarymod.need_marbles", RECRUIT_COST), true);
                 }
             }
             return InteractionResult.sidedSuccess(level().isClientSide);

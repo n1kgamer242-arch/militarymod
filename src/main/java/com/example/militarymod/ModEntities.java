@@ -3,6 +3,7 @@ package com.example.militarymod;
 import com.example.militarymod.entity.AllySoldier;
 import com.example.militarymod.entity.BulletEntity;
 import com.example.militarymod.entity.HostileSoldier;
+import com.example.militarymod.entity.MarbleMerchant;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.MobCategory;
 import net.minecraftforge.registries.DeferredRegister;
@@ -20,6 +21,10 @@ public class ModEntities {
     public static final RegistryObject<EntityType<HostileSoldier>> HOSTILE_SOLDIER = ENTITIES.register("hostile_soldier",
             () -> EntityType.Builder.of(HostileSoldier::new, MobCategory.MONSTER)
                     .sized(0.6F, 1.95F).clientTrackingRange(10).build("hostile_soldier"));
+
+    public static final RegistryObject<EntityType<MarbleMerchant>> MARBLE_MERCHANT = ENTITIES.register("marble_merchant",
+            () -> EntityType.Builder.of(MarbleMerchant::new, MobCategory.CREATURE)
+                    .sized(0.6F, 1.95F).clientTrackingRange(10).build("marble_merchant"));
 
     public static final RegistryObject<EntityType<BulletEntity>> BULLET = ENTITIES.register("bullet",
             () -> EntityType.Builder.<BulletEntity>of(BulletEntity::new, MobCategory.MISC)

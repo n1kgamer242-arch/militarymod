@@ -14,5 +14,9 @@
  "msg.militarymod.mode_follow": "Soldier: FOLLOW",
  "msg.militarymod.mode_guard": "Soldier: GUARD",
  "msg.militarymod.radio_rally": "%s soldiers moving to position",
- "msg.militarymod.radio_follow": "%s soldiers following you"
+ "msg.militarymod.radio_follow": "%s soldiers following you",
+ "item.militarymod.marble": "Marble",
+ "item.militarymod.marble_merchant_spawn_egg": "Marble Merchant Spawn Egg",
+ "entity.militarymod.marble_merchant": "Marble Merchant",
+ "msg.militarymod.need_marbles": "Recruiting costs %s marbles."
 }

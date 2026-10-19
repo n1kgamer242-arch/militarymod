@@ -80,7 +80,7 @@ public class MilitaryStructure extends Structure {
         BlockPos pos = new BlockPos(origin.getX(), ground + yOffset, origin.getZ());
         BlockPos startPos = new BlockPos(cx, ground, cz);
         return Optional.of(new GenerationStub(startPos,
-                builder -> builder.addPiece(new MilitaryPiece(ctx.structureTemplateManager(), template, pos, rotation))));
+                builder -> builder.addPiece(new MilitaryPiece(ctx.structureTemplateManager(), template, pos, rotation, !underground))));
     }
 
     @Override

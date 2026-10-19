@@ -4,6 +4,7 @@ import com.example.militarymod.MilitaryMod;
 import com.example.militarymod.ModEntities;
 import com.example.militarymod.entity.AllySoldier;
 import com.example.militarymod.entity.HostileSoldier;
+import com.example.militarymod.entity.MarbleMerchant;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.client.event.EntityRenderersEvent;
@@ -18,6 +19,8 @@ public class ClientEvents {
                 ctx -> new SoldierRenderer<AllySoldier>(ctx, new ResourceLocation(MilitaryMod.MODID, "textures/entity/ally_soldier.png")));
         e.registerEntityRenderer(ModEntities.HOSTILE_SOLDIER.get(),
                 ctx -> new SoldierRenderer<HostileSoldier>(ctx, new ResourceLocation(MilitaryMod.MODID, "textures/entity/hostile_soldier.png")));
+        e.registerEntityRenderer(ModEntities.MARBLE_MERCHANT.get(),
+                ctx -> new SoldierRenderer<MarbleMerchant>(ctx, new ResourceLocation(MilitaryMod.MODID, "textures/entity/marble_merchant.png")));
         e.registerEntityRenderer(ModEntities.BULLET.get(), BulletRenderer::new);
     }
 }
