@@ -6,7 +6,7 @@
  "terrain_adaptation": "none",
  "template": "militarymod:watchtower",
  "y_offset": -4,
- "max_slope": 3,
+ "max_slope": 6,
  "underground": false,
  "check_radius": 8
 }

@@ -6,7 +6,7 @@
  "terrain_adaptation": "none",
  "template": "militarymod:underground_bunker",
  "y_offset": -13,
- "max_slope": 3,
+ "max_slope": 6,
  "underground": true,
  "check_radius": 8
 }

@@ -6,7 +6,7 @@
  "terrain_adaptation": "none",
  "template": "militarymod:airbase",
  "y_offset": -4,
- "max_slope": 5,
+ "max_slope": 10,
  "underground": false,
  "check_radius": 8
 }
